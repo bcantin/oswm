@@ -18,3 +18,6 @@
     = f.association :languages, :collection => Language.all(:order => 'name'), :as => :check_boxes, :error => false
 
     = f.button :submit
+    
+%p.idea
+  Postings will automatically expire after thirty minutes.
