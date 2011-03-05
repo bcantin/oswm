@@ -1,6 +1,6 @@
 == OSWM (open source it with me)
 
-I am to create a fast and easy to use website for developers and coders to
+I aim to create a fast and easy to use website for developers and coders to
 connect for quick one on one code pairing sessions
 
 VERSION 1:
