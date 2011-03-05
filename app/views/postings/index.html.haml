@@ -1,5 +1,5 @@
 %h2.posting 
-  Postings
+  Postings  (showing the last 30 mins of activity)
   = link_to 'Create A Posting', new_posting_path
   
 - if @postings.empty?
@@ -9,7 +9,7 @@
     one.
 
 - else
- 
+   
   - @postings.each do |posting|
     %p.posting
       = posting.name
