@@ -15,9 +15,6 @@ VERSION 1:
       Developer B clicks on the post and then has to supply their email address
       Developer A gets an email from the website containing
         Developer B's email address
-        A link to destroy their original Post
-        A link to auto reply that they are no longer interested in Pairing at this time.
-          The auto reply should also destroy their posting
           
     All Posts get destroyed after 30 minutes from their time of creation
       This allowed developers to see only fresh posts, no stale ones.
