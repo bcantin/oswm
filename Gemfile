@@ -7,8 +7,10 @@ gem 'sqlite3'
 
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
+gem "simple_form"
 
 group :development, :test do
+  gem 'thin'
   gem "rspec-rails", ">= 2.0.1" 
   gem "cucumber-rails" 
   gem "capybara"

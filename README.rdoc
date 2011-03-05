@@ -8,6 +8,7 @@ VERSION 1:
     Developer A posts:
       What they want to do (text)
       What languages they want to do it in (A predefined list)
+      A display name (optional)
     Developer A must also supply their email address, which is not shown
   
     Developer B comes to the site and wants to pair with Developer A
@@ -16,7 +17,8 @@ VERSION 1:
         Developer B's email address
         A link to destroy their original Post
         A link to auto reply that they are no longer interested in Pairing at this time.
-        
+          The auto reply should also destroy their posting
+          
     All Posts get destroyed after 30 minutes from their time of creation
       This allowed developers to see only fresh posts, no stale ones.
         

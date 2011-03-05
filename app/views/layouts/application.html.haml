@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Open Source It With Me
+    = stylesheet_link_tag 'reset', 'main'
+    = javascript_include_tag 'jquery', 'rails', 'application'
+    = csrf_meta_tag
+  %body
+    #wrapper
+      #header
+        %h1 Open Source It With Me
+        %h2
+          A simple way for developers to pair up for short sessions
+        
+      #content
+        = yield
+    
+      #footer
+        = link_to 'Contact Me', '#'
