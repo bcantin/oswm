@@ -70,6 +70,9 @@ body {
     #content ul.idea li {
       font-size: 1.1em;
       color: #777777; }
+  #content ul.upcoming {
+    margin: 20px;
+    list-style-type: disc; }
   #content #posting-area {
     margin-top: 25px; }
     #content #posting-area input {

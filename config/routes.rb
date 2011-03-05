@@ -13,6 +13,8 @@ Oswm::Application.routes.draw do
     end
   end
   
+  resource :roadmap
+  
   root :to => "home#index"
   
   # Sample of named route:
