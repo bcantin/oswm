@@ -1,0 +1,22 @@
+== OSWM (open source it with me)
+
+I am to create a fast and easy to use website for developers and coders to
+connect for quick one on one code pairing sessions
+
+VERSION 1:
+  Use Case:
+    Developer A posts:
+      What they want to do (text)
+      What languages they want to do it in (A predefined list)
+    Developer A must also supply their email address, which is not shown
+  
+    Developer B comes to the site and wants to pair with Developer A
+      Developer B clicks on the post and then has to supply their email address
+      Developer A gets an email from the website containing
+        Developer B's email address
+        A link to destroy their original Post
+        A link to auto reply that they are no longer interested in Pairing at this time.
+        
+    All Posts get destroyed after 30 minutes from their time of creation
+      This allowed developers to see only fresh posts, no stale ones.
+        
