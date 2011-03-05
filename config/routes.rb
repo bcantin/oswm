@@ -6,7 +6,12 @@ Oswm::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
-  resources :postings
+  resources :postings do
+    member do
+      get 'contact'
+      post 'contact'
+    end
+  end
   
   root :to => "home#index"
   

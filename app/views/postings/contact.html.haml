@@ -1,0 +1,8 @@
+%h2 Contact!
+
+#posting-area
+  = form_tag contact_posting_path(@posting) do 
+  
+    = label_tag :your_email
+    = text_field_tag :your_email
+    = submit_tag('Contact')
