@@ -1,6 +1,7 @@
 class CreatePostings < ActiveRecord::Migration
   def self.up
     create_table :postings do |t|
+      t.string :email
       t.string :display_name
       t.string :idea
       t.timestamps

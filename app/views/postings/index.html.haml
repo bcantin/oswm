@@ -1,5 +1,7 @@
-%h2.posting Postings
-
+%h2.posting 
+  Postings
+  = link_to 'Create A Posting', new_posting_path
+  
 - if @postings.empty?
   %p 
     There are no postings.  You should 
@@ -18,4 +20,4 @@
       \. Posted
       = distance_of_time_in_words_to_now(posting.created_at)
       ago.
-      
+      = link_to 'Contact', '#'

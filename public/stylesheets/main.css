@@ -52,6 +52,8 @@ body {
     margin-top: 25px; }
   #content h2.posting {
     margin-bottom: 20px; }
+    #content h2.posting a {
+      float: right; }
   #content p {
     font-size: 1.3em;
     color: black;
@@ -60,7 +62,8 @@ body {
     margin-left: 10px;
     margin-top: 10px; }
   #content p.posting {
-    margin-left: 10px; }
+    margin-left: 10px;
+    margin-bottom: 20px; }
   #content ul.idea {
     margin-top: 15px;
     margin-left: 25px; }
@@ -109,9 +112,7 @@ body {
 
 #errorExplanation {
   width: 450px;
-  border: 2px solid red;
   padding: 7px;
-  padding-bottom: 0;
   margin-left: 115px;
   margin-bottom: 20px;
   background-color: #f0f0f0; }
@@ -126,4 +127,4 @@ body {
     color: white; }
   #errorExplanation ul li {
     font-size: 12px;
-    list-style: square; }
+    list-style: none; }

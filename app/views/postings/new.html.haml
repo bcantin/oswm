@@ -1,10 +1,17 @@
 %h2 Create a Posting
 
+%p
+  Not sure what to work on but you want to work on something?  Check out
+  = link_to 'Project Euler', 'http://projecteuler.net/', :target => '_blank'
+  and
+  = link_to 'Code Katas', 'http://codekata.pragprog.com/', :target => '_blank'
+  
 #posting-area
   = simple_form_for @posting do |f|
   
     = render "shared/error_messages", :target => @posting
-  
+    
+    = f.input :email, :hint => 'not shown', :error => false
     = f.input :display_name, :hint => 'optional'
     = f.input :idea, :error => false
   

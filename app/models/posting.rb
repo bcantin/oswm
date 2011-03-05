@@ -17,6 +17,7 @@ class Posting < ActiveRecord::Base
   after_save :set_n_a_language
   
   validates :idea, :presence => true
+  validates :email, :presence => true
   
   def self.fresh
     where('created_at >= ?', 30.minutes.ago).order('created_at')

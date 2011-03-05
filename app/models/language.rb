@@ -11,4 +11,6 @@
 class Language < ActiveRecord::Base
   has_many :posting_languages
   has_many :postings, :through => :posting_languages
+  
+  validates :name, :uniqueness => true
 end

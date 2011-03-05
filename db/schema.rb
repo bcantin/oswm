@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20110305190403) do
   end
 
   create_table "postings", :force => true do |t|
+    t.string   "email"
     t.string   "display_name"
     t.string   "idea"
     t.datetime "created_at"
