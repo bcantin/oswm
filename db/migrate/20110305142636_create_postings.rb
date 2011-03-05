@@ -4,7 +4,6 @@ class CreatePostings < ActiveRecord::Migration
       t.string :display_name
       t.string :body
       t.string :languages
-      t.string :token
       t.timestamps
     end
   end

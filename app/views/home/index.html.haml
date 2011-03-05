@@ -1,17 +1,19 @@
-%h2 It is FREE and easy.  Two ways to get started
+%h2 It is FREE and easy.  Two ways to get started.
 
-%p.idea Have an idea ?
+%p.idea 
+  Have an idea ?
 
 %ul.idea
   %li 
-    = link_to 'Create', '#'
+    = link_to 'Create', new_posting_path
     a post containing your idea and which languages you know.  Your email address will not be posted.
   %li 
     Wait for someone to reply to your post.
   %li 
     Get together on IRC, Skype, or some other way and get coding!
     
-%p.idea See an idea you like ?
+%p.idea 
+  See an idea you like ?
 
 %ul.idea
   %li 
@@ -21,3 +23,11 @@
     Wait for a reply from the creator
   %li 
     Get together on IRC, Skype, or some other way and get coding!
+
+
+%h2.start
+  Let's go!
+  = link_to 'Create', new_posting_path
+  a post or
+  = link_to 'View', '#'
+  posts!

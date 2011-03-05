@@ -10,6 +10,7 @@ gem "haml-rails"
 gem "simple_form"
 
 group :development, :test do
+  gem 'annotate'
   gem 'thin'
   gem "rspec-rails", ">= 2.0.1" 
   gem "cucumber-rails" 

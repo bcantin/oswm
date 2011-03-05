@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(:version => 20110305142636) do
     t.string   "display_name"
     t.string   "body"
     t.string   "languages"
-    t.string   "token"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

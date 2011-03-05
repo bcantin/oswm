@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0; }
 
+a:visited {
+  color: blue; }
+
 body {
   font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -36,21 +39,56 @@ body {
   background: white;
   margin: 0px 0px 5px 0px;
   padding: 10px;
-  height: 350px; }
+  min-height: 350px; }
   #content h2 {
     font-size: 1.5em; }
-  #content p.idea {
-    margin-left: 10px;
-    margin-top: 10px;
+  #content h2.start {
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 25px; }
+  #content p {
     font-size: 1.3em;
     color: black;
     text-shadow: 2px 2px 2px #cccccc; }
+  #content p.idea {
+    margin-left: 10px;
+    margin-top: 10px; }
   #content ul.idea {
     margin-top: 15px;
     margin-left: 25px; }
     #content ul.idea li {
       font-size: 1.1em;
       color: #777777; }
+  #content #posting-area {
+    margin-top: 25px; }
+    #content #posting-area input {
+      padding: 5px;
+      font-family: Helvetica, sans-serif;
+      font-size: 1.4em;
+      margin: 0px 0px 10px 0px;
+      border: 2px solid #cccccc; }
+    #content #posting-area input:focus {
+      border: 2px solid #990000; }
+    #content #posting-area .button {
+      margin-left: 110px; }
+      #content #posting-area .button:hover {
+        cursor: pointer;
+        border: 2px solid #990000; }
+    #content #posting-area label {
+      font-size: 1.3em;
+      color: black;
+      text-shadow: 2px 2px 2px #cccccc;
+      float: left;
+      text-align: right;
+      margin-right: 15px;
+      width: 100px;
+      padding-top: 5px; }
+    #content #posting-area li {
+      margin-left: 115px; }
+      #content #posting-area li:first-child {
+        padding-top: 5px; }
+      #content #posting-area li label {
+        float: none; }
 
 #footer {
   text-align: center;
