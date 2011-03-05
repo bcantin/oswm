@@ -33,6 +33,11 @@ body
   h1
     font-size: 2.2em
     margin-bottom: 20px
+    a
+      color: #333
+      &:hover
+        text-shadow: 2px 2px 2px #ff7373
+        
   h2
     color: #000
     font-style: italic
@@ -53,6 +58,8 @@ body
     text-align: center
     margin-left: 25px
     margin-top: 25px
+  h2.posting
+    margin-bottom: 20px
   p
     font-size: 1.3em
     color: #000
@@ -60,6 +67,8 @@ body
   p.idea
     margin-left: 10px
     margin-top: 10px
+  p.posting
+    margin-left: 10px
   ul.idea
     margin-top: 15px
     margin-left: 25px
@@ -79,7 +88,7 @@ body
       &:focus
         border: 2px solid #900
     .button
-      margin-left: 110px
+      margin-left: 115px
       &:hover
         cursor: pointer
         border: 2px solid #900
@@ -108,3 +117,24 @@ body
   background: #ddd
   margin: 0px 0px 10px 0px
   padding: 10px
+
+#errorExplanation
+  width: 450px
+  border: 2px solid red
+  padding: 7px
+  padding-bottom: 0
+  margin-left: 115px
+  margin-bottom: 20px
+  background-color: #f0f0f0
+  h2
+    text-align: left
+    font-weight: bold
+    padding: 5px 5px 5px 15px
+    font-size: 12px
+    margin: -7px
+    margin-bottom: 0px
+    background-color: #c00
+    color: #fff
+  ul li
+    font-size: 12px
+    list-style: square  

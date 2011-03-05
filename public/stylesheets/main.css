@@ -26,6 +26,10 @@ body {
   #header h1 {
     font-size: 2.2em;
     margin-bottom: 20px; }
+    #header h1 a {
+      color: #333333; }
+      #header h1 a:hover {
+        text-shadow: 2px 2px 2px #ff7373; }
   #header h2 {
     color: black;
     font-style: italic;
@@ -46,6 +50,8 @@ body {
     text-align: center;
     margin-left: 25px;
     margin-top: 25px; }
+  #content h2.posting {
+    margin-bottom: 20px; }
   #content p {
     font-size: 1.3em;
     color: black;
@@ -53,6 +59,8 @@ body {
   #content p.idea {
     margin-left: 10px;
     margin-top: 10px; }
+  #content p.posting {
+    margin-left: 10px; }
   #content ul.idea {
     margin-top: 15px;
     margin-left: 25px; }
@@ -70,7 +78,7 @@ body {
     #content #posting-area input:focus {
       border: 2px solid #990000; }
     #content #posting-area .button {
-      margin-left: 110px; }
+      margin-left: 115px; }
       #content #posting-area .button:hover {
         cursor: pointer;
         border: 2px solid #990000; }
@@ -98,3 +106,24 @@ body {
   background: #dddddd;
   margin: 0px 0px 10px 0px;
   padding: 10px; }
+
+#errorExplanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-left: 115px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #errorExplanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #cc0000;
+    color: white; }
+  #errorExplanation ul li {
+    font-size: 12px;
+    list-style: square; }

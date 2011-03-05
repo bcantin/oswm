@@ -4,8 +4,7 @@
 #
 #  id           :integer         not null, primary key
 #  display_name :string(255)
-#  body         :string(255)
-#  languages    :string(255)
+#  idea         :string(255)
 #  created_at   :datetime
 #  updated_at   :datetime
 #

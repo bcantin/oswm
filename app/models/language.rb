@@ -8,8 +8,7 @@
 #  updated_at :datetime
 #
 
-require 'spec_helper'
-
-describe Language do
-  pending "add some examples to (or delete) #{__FILE__}"
+class Language < ActiveRecord::Base
+  has_many :posting_languages
+  has_many :postings, :through => :posting_languages
 end

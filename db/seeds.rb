@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+%w(C C++ Java Perl PHP Python Ruby Other N/A).each do |lang|
+  Language.create(:name => lang)
+end

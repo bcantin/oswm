@@ -10,12 +10,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110305142636) do
+ActiveRecord::Schema.define(:version => 20110305190403) do
+
+  create_table "languages", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posting_languages", :force => true do |t|
+    t.integer  "posting_id"
+    t.integer  "language_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "postings", :force => true do |t|
     t.string   "display_name"
-    t.string   "body"
-    t.string   "languages"
+    t.string   "idea"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

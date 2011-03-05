@@ -1,1 +1,21 @@
-%h2 INDEX HERE
+%h2.posting Postings
+
+- if @postings.empty?
+  %p 
+    There are no postings.  You should 
+    = link_to 'create', new_posting_path
+    one.
+
+- else
+ 
+  - @postings.each do |posting|
+    %p.posting
+      = posting.name
+      wants to work on 
+      = posting.idea
+      using
+      = language_list(posting.languages)
+      \. Posted
+      = distance_of_time_in_words_to_now(posting.created_at)
+      ago.
+      

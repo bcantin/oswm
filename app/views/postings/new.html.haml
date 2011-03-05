@@ -3,9 +3,11 @@
 #posting-area
   = simple_form_for @posting do |f|
   
-    = f.input :display_name, :hint => 'optional'
-    = f.input :body
+    = render "shared/error_messages", :target => @posting
   
-    = f.input :languages, :collection => Posting::LANGUAGES, :as => :check_boxes
+    = f.input :display_name, :hint => 'optional'
+    = f.input :idea, :error => false
+  
+    = f.association :languages, :collection => Language.all(:order => 'name'), :as => :check_boxes, :error => false
 
     = f.button :submit
