@@ -3,19 +3,31 @@
 I aim to create a fast and easy to use website for developers and coders to
 connect for quick one on one code pairing sessions
 
-VERSION 1:
-  Use Case:
-    Developer A posts:
-      What they want to do (text)
-      What languages they want to do it in (A predefined list)
-      A display name (optional)
-    Developer A must also supply their email address, which is not shown
+= Roadmap (upcoming things)
+
+Github integration
   
-    Developer B comes to the site and wants to pair with Developer A
-      Developer B clicks on the post and then has to supply their email address
-      Developer A gets an email from the website containing
-        Developer B's email address
-          
-    All Posts get destroyed after 30 minutes from their time of creation
-      This allowed developers to see only fresh posts, no stale ones.
-        
+  login with github account - DONE
+  pull github projects and allow user to select a project from a dropdown of imported projects
+
+URL
+
+  point opensourceitwith.me to heroku - DONE
+
+Postings
+  
+  add more information to a posting
+  add a show page for a posting
+  track the number of views a posting gets
+  
+Landing page
+  
+  show the number of postings
+  twitter integration ?
+
+Notifications
+  
+  add ability for a user to get notifications when anyone creates a posting
+  add ability to limit the notifications based on programming language(s)
+
+
