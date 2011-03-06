@@ -34,6 +34,8 @@ body {
       float: right; }
       #header h1 #user_nav a {
         color: blue; }
+        #header h1 #user_nav a:hover {
+          text-shadow: none; }
   #header h2 {
     clear: both;
     text-align: center;
