@@ -23,6 +23,7 @@ class PostingsController < ApplicationController
   
   def contact
     @posting = Posting.find(params[:id])
+    params[:your_email] ||= current_user.email
     if request.post? && params[:your_email]
       Notifier.contact(@posting, params[:your_email]).deliver
       redirect_to postings_path, :notice => 'Your contact information has been sent'
