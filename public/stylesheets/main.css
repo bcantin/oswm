@@ -21,8 +21,7 @@ body {
   border: 1px solid #aaaaaa;
   height: 100px;
   margin: 10px 0px 5px 0px;
-  background: white;
-  text-align: center; }
+  background: white; }
   #header h1 {
     font-size: 2.2em;
     margin-bottom: 20px; }
@@ -30,7 +29,14 @@ body {
       color: #333333; }
       #header h1 a:hover {
         text-shadow: 2px 2px 2px #ff7373; }
+    #header h1 #user_nav {
+      font-size: 14px;
+      float: right; }
+      #header h1 #user_nav a {
+        color: blue; }
   #header h2 {
+    clear: both;
+    text-align: center;
     color: black;
     font-style: italic;
     font-size: 1.5em;

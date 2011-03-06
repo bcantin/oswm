@@ -8,11 +8,20 @@
   %body
     #wrapper
       #header
-        %h1 
-          =link_to 'Open Source It With Me', root_path
+        %h1
+          = link_to 'Open Source It With Me', root_path
+          #user_nav
+            - if current_user
+              Welcome 
+              = current_user.name
+              = link_to 'Sign Out', signout_path
+            - else
+              = link_to "Sign in with Github", "/auth/github"
+          
         %h2
           A simple way for developers to pair up for short sessions
-          
+
+        
       #content
         = yield
     

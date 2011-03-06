@@ -6,6 +6,10 @@ class PostingsController < ApplicationController
   
   def new
     @posting = Posting.new
+    if current_user
+      @posting.email = current_user.email
+      @posting.display_name = current_user.name
+    end
   end
   
   def create

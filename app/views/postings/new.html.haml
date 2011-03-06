@@ -10,7 +10,7 @@
   = simple_form_for @posting do |f|
   
     = render "shared/error_messages", :target => @posting
-    
+        
     = f.input :email, :hint => 'not shown', :error => false
     = f.input :display_name, :hint => 'optional'
     = f.input :idea, :error => false

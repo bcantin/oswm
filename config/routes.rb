@@ -12,11 +12,14 @@ Oswm::Application.routes.draw do
       post 'contact'
     end
   end
-  
+
   resource :roadmap
-  
+
+  match "/auth/:provider/callback" => "sessions#create"
+  match "/signout" => "sessions#destroy", :as => :signout
+
   root :to => "home#index"
-  
+
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)

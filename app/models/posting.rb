@@ -3,6 +3,7 @@
 # Table name: postings
 #
 #  id           :integer         not null, primary key
+#  email        :string(255)
 #  display_name :string(255)
 #  idea         :string(255)
 #  created_at   :datetime
