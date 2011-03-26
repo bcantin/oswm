@@ -4,7 +4,7 @@ development:
   adapter: postgresql
   encoding: unicode
   database: oswm_dev
-  username: bcantin
+  username: core
   password: 
   port: 5432
   # adapter: pg

@@ -1,4 +1,6 @@
+require 'tweet'
 class ApplicationController < ActionController::Base
+  include Tweet
   protect_from_forgery
 
   helper_method :current_user

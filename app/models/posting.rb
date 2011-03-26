@@ -17,8 +17,9 @@ class Posting < ActiveRecord::Base
   
   after_save :set_n_a_language
   
-  validates :idea, :presence => true
-  validates :email, :presence => true
+  validates :idea, :presence => true, :uniqueness => true, :length => { :minimum => 15 }
+  validates :email, :presence => true, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, :on => :create }
+
   
   def self.fresh
     where('created_at >= ?', 30.minutes.ago).order('created_at')
@@ -40,5 +41,4 @@ class Posting < ActiveRecord::Base
       end
       languages << l
     end
-    
 end
