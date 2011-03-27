@@ -4,6 +4,10 @@ class PostingsController < ApplicationController
     @postings = Posting.fresh
   end
   
+  def show
+    @posting = Posting.find(params[:id])
+  end
+  
   def new
     @posting = Posting.new
     if current_user
@@ -26,10 +30,12 @@ class PostingsController < ApplicationController
   def contact
     @posting = Posting.find(params[:id])
     current_user ? params[:your_email] ||= current_user.email : nil
-    if request.post? && params[:your_email]
+    if request.post? && params[:your_email] == [/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i]
       Notifier.contact(@posting, params[:your_email]).deliver
       redirect_to postings_path, :notice => 'Your contact information has been sent'
-    end
+    else
+      flash[:error] = "You must submit email in a valid format."
+    end 
   end
   
 end

@@ -10,6 +10,7 @@ Oswm::Application.routes.draw do
     member do
       get 'contact'
       post 'contact'
+      get 'show'
     end
   end
 
