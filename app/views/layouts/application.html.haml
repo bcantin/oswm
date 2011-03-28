@@ -20,6 +20,11 @@
           
         %h2
           A simple way for developers to pair up for short sessions
+          
+      #issues
+        - [:notice, :error, :message].each do |key| 
+          - unless flash[key].blank? 
+            %p{ :class => "flash flash_#{key}" }= flash[key]
 
         
       #content

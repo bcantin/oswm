@@ -28,8 +28,18 @@
   Postings will automatically expire after thirty minutes.
 
 %h2.start
+  There are
+  %span
+    -if @fresh_posts <= 1
+      (#{@fresh_posts}) posts.
+    -else
+      (No Posts)
+    
   Let's go!
+  %br
   = link_to 'Create', new_posting_path
-  a post or
-  = link_to 'View', postings_path
-  posts!
+  a post
+  -if @fresh_posts >= 1
+    or
+    = link_to 'View', postings_path
+    posts!
