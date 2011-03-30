@@ -21,9 +21,9 @@
         %h2
           A simple way for developers to pair up for short sessions
           
-      #issues
-        - [:notice, :error, :message].each do |key| 
-          - unless flash[key].blank? 
+      - [:notice, :error, :message].each do |key| 
+        - unless flash[key].blank? 
+          #issues
             %p{ :class => "flash flash_#{key}" }= flash[key]
 
         

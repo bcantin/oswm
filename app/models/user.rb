@@ -14,6 +14,8 @@
 
 class User < ActiveRecord::Base
 
+  EMAIL_IS_VALID = /^[^@]+?@[^@]+?$/i
+
   def self.create_with_omniauth(auth)
     create! do |user|
       user.provider    = auth["provider"]

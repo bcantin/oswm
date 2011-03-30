@@ -16,7 +16,7 @@ class PostingsController < ApplicationController
     @posting = Posting.new(params[:posting])
     @message = @posting.idea
     if @posting.save
-      response = tweet("#{@posting.idea}")
+      # response = tweet("#{@posting.idea}")
       redirect_to postings_path, :notice => 'You have created a posting!'
     else
       render :new
@@ -26,11 +26,11 @@ class PostingsController < ApplicationController
   def contact
     @posting = Posting.find(params[:id])
     current_user ? params[:your_email] ||= current_user.email : nil
-    if request.post? && params[:your_email][/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i]
+    if request.post? && params[:your_email][User::EMAIL_IS_VALID]
       Notifier.contact(@posting, params[:your_email]).deliver
       redirect_to postings_path, :notice => 'Your contact information has been sent'
-    elsif request.post? && params[:your_email] != [/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i]
-      flash[:error] = "You must enter a valid email."
+    elsif request.post?
+      flash.now[:error] = "You must enter a valid email."
     end 
   end
   

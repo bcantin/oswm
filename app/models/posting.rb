@@ -17,8 +17,8 @@ class Posting < ActiveRecord::Base
   
   after_save :set_n_a_language
   
-  validates :idea, :presence => true, :uniqueness => true, :length => { :minimum => 15 }
-  validates :email, :presence => true, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, :on => :create }
+  validates :idea, :presence => true, :length => { :minimum => 15 }
+  validates :email, :presence => true, :format => { :with => User::EMAIL_IS_VALID, :on => :create }
 
   
   def self.fresh

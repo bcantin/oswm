@@ -30,8 +30,8 @@
 %h2.start
   There are
   %span
-    -if @fresh_posts <= 1
-      (#{@fresh_posts}) posts.
+    -if @fresh_posts >= 1
+      (#{pluralize(@fresh_posts, "post")})
     -else
       (No Posts)
     
